@@ -1,151 +1,119 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+(
+  module.exports = {
+    title: "綿飴屋のドキュメント",
+    tagline: "wataameya",
+    url: "https://wataame89.github.io",
+    baseUrl: "/documents-wataameya/",
+    onBrokenLinks: "throw",
+    onBrokenMarkdownLinks: "warn",
+    favicon: "img/wataameya.png",
+    organizationName: "wataame89", // Usually your GitHub org/user name.
+    projectName: "documents-wataameya", // Usually your repo name.
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+    i18n: {
+      defaultLocale: "ja",
+      locales: ["ja", "en", "ko", "zh"],
+    },
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
+    presets: [
+      [
+        "@docusaurus/preset-classic",
+        /** @type {import('@docusaurus/preset-classic').Options} */
+        ({
+          docs: {
+            routeBasePath: "/",
+            sidebarPath: require.resolve("./sidebars.js"),
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          blog: false,
+          theme: {
+            customCss: require.resolve("./src/css/custom.css"),
+          },
+        }),
+      ],
+    ],
+
+    themeConfig:
+      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        navbar: {
+          title: "綿飴屋 Wataameya",
+          // logo: {
+          //   alt: "My Site Logo",
+          //   src: "img/wataameya.png",
+          // },
+          items: [
+            {
+              type: "doc",
+              docId: "marshmallowPB/intro",
+              position: "left",
+              label: "ましゅまろPB",
+            },
+            {
+              type: "doc",
+              docId: "motchiriShader/intro",
+              position: "left",
+              label: "もっちりシェーダー",
+            },
+            {
+              type: "doc",
+              docId: "blackoutShader/intro",
+              position: "left",
+              label: "ブラックアウトシェーダー",
+            },
+            {
+              type: "doc",
+              docId: "blackbodyShader/intro",
+              position: "left",
+              label: "ブラックボディシェーダー",
+            },
+            {
+              type: "doc",
+              docId: "shadowdepthShader/intro",
+              position: "left",
+              label: "なでなでシェーダー",
+            },
+            {
+              type: "localeDropdown",
+              position: "right",
+            },
+            {
+              href: "https://twitter.com/wataameya_vr",
+              label: "Twitter",
+              position: "right",
+            },
+            {
+              href: "https://wataame89.booth.pm/",
+              label: "Booth",
+              position: "right",
+            },
+          ],
         },
-        theme: {
-          customCss: './src/css/custom.css',
+        footer: {
+          style: "dark",
+          links: [
+            {
+              title: "Links",
+              items: [
+                {
+                  label: "Booth",
+                  href: "https://wataame89.booth.pm/",
+                },
+                {
+                  label: "Twitter",
+                  href: "https://twitter.com/wataameya_vr",
+                },
+              ],
+            },
+          ],
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        },
+        prism: {
+          theme: prismThemes.github,
+          darkTheme: prismThemes.dracula,
         },
       }),
-    ],
-  ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
-};
-
-export default config;
+  }
+);
