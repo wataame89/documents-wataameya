@@ -1,36 +1,39 @@
 # はじめに
 
-[ましゅまろ PB](https://wataame89.booth.pm/items/4511536)とはリッチな物理表現を可能としたつぶれる PhysBone です。  
-通常の PhysBone に加え、アニメーションやコンポーネントを組み合わせて形成されており、設定する際はオブジェクトに加え、FX レイヤーを追加することで機能します。  
-ver1.7.0 以降では Modular Avatar の[Non-Destructive Modular Framework(NDMF)](https://github.com/bdunderscore/ndmf)対応により、非破壊的に導入が可能となりました。
+<img
+src="https://booth.pximg.net/fa10e05a-2beb-4ed5-bce0-808f4aa52e0b/i/4511536/6b863807-83a9-4f67-8fb8-fcbd3d0b548e_base_resized.jpg"
+style={{ width: '300px' }}
+/>
 
-### ましゅまろ PB 紹介動画
+### 商品説明
 
-<iframe width="420" height="237" src="https://player.vimeo.com/video/1050257536?h=72156f9447&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+[ましゅまろ PB](https://wataame89.booth.pm/items/4511536)とはリッチな物理表現を可能とした、つぶれる PhysBone システムです。  
+伸び縮みや重力の影響を計算することで、通常の PB にはないリアルな挙動を実現します。
 
-<iframe width="420" height="237" src="https://player.vimeo.com/video/1050257567?h=0233c8ce70&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+Modular Avatar を用いたセットアップシステムにより、簡単に非破壊的な導入が可能です。  
+対応していないアバターでも、シーン上で位置調整することによりセットアップが可能です。
 
-### 特徴
+通常の PhysBone に加え、アニメーションやコンストレイントを組み合わせて形成されており、アバターに設定する際はオブジェクトと FX レイヤーを追加することで機能します。ver1.7.0 以降では Modular Avatar の[Non-Destructive Modular Framework(NDMF)](https://github.com/bdunderscore/ndmf)対応により、非破壊的に導入が可能となりました。
 
-- 押したり握ったりすると、動きに応じてつぶれる！
-- 重力表現により、寝そべるとつぶれ、かがむと伸びる！(旧ましゅまろ PB、新ましゅまろ PB(ver1.7.0 以降))
-- Modular Avatar(NDMF)による簡単・非破壊的導入！
-- ましゅまろ PB を導入しているプレイヤーと相互干渉が可能！
-- より良い揺れ表現(PhysBone プリセット、胸同士の相互干渉、平行揺れ機能)
-- その他、細かい様々な調整(ブレにくいコライダー、掴んだ際のコライダーオフ機能、床コライダー設定、etc.)
+<iframe width="640" height="360" src="https://player.vimeo.com/video/1050257536?h=72156f9447&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+<iframe width="640" height="360" src="https://player.vimeo.com/video/1050257567?h=0233c8ce70&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+### 機能
+
+- つぶれ機能：押したり握ったりすると、動きに応じてつぶれる！
+- 揺れ機能：より良い揺れ表現が可能！(揺れ方プリセット、左右の胸同士の干渉、平行揺れ機能)
+- 重力機能：重力表現により、寝そべるとつぶれ、かがむと伸びる！
+- 相互干渉機能：ましゅまろ PB を導入しているプレイヤーと相互干渉が可能！
+- その他、細かい調整(胸コライダー設定、掴んだ際のコライダーオフ機能、床コライダー設定など)
 
 ### 対応アバター
 
-舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、 萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka、あのん Anon、リーファ Leefa、サタリナ族のメイドさん Satarina、珀杏 Hakua、瑞希 Mizuki、狐雪 Koyuki、ソフィナ Sophina、龍のヨルちゃん Yoru、ラシューシャ Lasyusha、シャオファ Xiaohua、凪 Nagi、シフォン Chiffon、リルモワ Liloumois、ルゼブル Lzebul、サリア Saria、伊奈波かや InabaKaya、モルフォ Morpho、しお Sio、きゃろん Kyalong、キスマ UltimateKissMa、ナナセ・ノワール Nanase Noir、真冬 Mafuyu、ルルネ Rurune
+舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、 萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka、あのん Anon、リーファ Leefa、サタリナ族のメイドさん Satarina、珀杏 Hakua、瑞希 Mizuki、狐雪 Koyuki、ソフィナ Sophina、龍のヨルちゃん Yoru、ラシューシャ Lasyusha、シャオファ Xiaohua、凪 Nagi、シフォン Chiffon、リルモワ Liloumois、ルゼブル Lzebul、サリア Saria、伊奈波かや InabaKaya、モルフォ Morpho、しお Sio、きゃろん Kyalong、キスマ UltimateKissMa、ナナセ・ノワール Nanase Noir、真冬 Mafuyu、ルルネ Rurune、愛莉 Airi、しなの Shinano、ショコラ Chocolat、りりか Ririka
 
 ### 注意
 
 - Quest 版 VRChat には対応していません。
 - 商品の仕様上、服によっては貫通することがあります。
-- Modular Avatar を使用しない方法での導入はサポート対象外です。
+- Unity のバージョンは 2022.3.22f1 のみサポートしています。
 - 公序良俗を守ってお使いください。
-
-<!-- ### ベータ版使用者の方へ
-ベータ版をお試し頂き、誠にありがとうございます。
-動かない場合や設定がよく分からない場合はお気軽に[作者Twitter](https://twitter.com/wataameya_vr)にてDMや@ツイートでお知らせください。
-ご意見・バグ報告なども頂けると助かります。(特に設定項目や機能への要望を頂けるとありがたいです) -->

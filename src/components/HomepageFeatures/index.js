@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   // {
   //   title: "Easy to Use",
-  //   Svg: require("@site/static/img/marshmallow_PB.svg").default,
+  //   Svg: require("@site/static/img/marshmallowPB/marshmallow_PB.svg").default,
   //   description: (
   //     <>
   //       Docusaurus was designed from the ground up to be easily installed and
@@ -15,7 +15,7 @@ const FeatureList = [
   // },
   // {
   //   title: "Easy to Use",
-  //   Svg: require("@site/static/img/motchiri_shader.svg").default,
+  //   Svg: require("@site/static/img/marshmallowPB/motchiri_shader.svg").default,
   //   description: (
   //     <>
   //       Docusaurus was designed from the ground up to be easily installed and
@@ -25,7 +25,7 @@ const FeatureList = [
   // },
   // {
   //   title: "Focus on What Matters",
-  //   Svg: require("@site/static/img/blackout_shader.svg").default,
+  //   Svg: require("@site/static/img/marshmallowPB/blackout_shader.svg").default,
   //   description: (
   //     <>
   //       Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -35,7 +35,7 @@ const FeatureList = [
   // },
   // {
   //   title: "Powered by React",
-  //   Svg: require("@site/static/img/blackbody_shader.svg").default,
+  //   Svg: require("@site/static/img/marshmallowPB/blackbody_shader.svg").default,
   //   description: (
   //     <>
   //       Extend or customize your website layout by reusing React. Docusaurus can
@@ -45,7 +45,7 @@ const FeatureList = [
   // },
   // {
   //   title: "Powered by React",
-  //   Svg: require("@site/static/img/shadowdepth_shader.svg").default,
+  //   Svg: require("@site/static/img/marshmallowPB/shadowdepth_shader.svg").default,
   //   description: (
   //     <>
   //       Extend or customize your website layout by reusing React. Docusaurus can

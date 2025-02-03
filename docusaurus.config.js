@@ -80,8 +80,8 @@ import { themes as prismThemes } from "prism-react-renderer";
               position: "right",
             },
             {
-              href: "https://twitter.com/wataameya_vr",
-              label: "Twitter",
+              href: "https://x.com/wataameya_vr",
+              label: "X(Twitter)",
               position: "right",
             },
             {
