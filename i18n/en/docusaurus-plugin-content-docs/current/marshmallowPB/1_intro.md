@@ -1,4 +1,3 @@
-
 # Introduction
 
 <img
@@ -30,7 +29,7 @@ In addition to standard PhysBones, it combines animations and constraints to ach
 
 ### Supported Avatars
 
-Maya (舞夜), Kikyo (桔梗), Selestia (セレスティア), Inaba (イナバ), Imeris (イメリス), Kokoa (ここあ), Rindo (竜胆), Tuberose (チューベローズ), Rushka (ルーシュカ), Yugi Miyo (ユギ ミヨ), Chise (チセ), Kuronatu (くろなつ), Moe (萌), Shinra (森羅), Uzuki (卯月), Lime (ライム), Velle (ヴェール), Manuka (マヌカ), Anon (あのん), Leefa (リーファ), Maid from the Satarina Tribe (サタリナ族のメイドさん), Hakua (珀杏), Mizuki (瑞希), Koyuki (狐雪), Sophina (ソフィナ), Yoru the Dragon (龍のヨルちゃん), Lasyusha (ラシューシャ), Xiaohua (シャオファ), Nagi (凪), Chiffon (シフォン), Liloumois (リルモワ), Lzebul (ルゼブル), Saria (サリア), InabaKaya (伊奈波かや), Morpho (モルフォ), Sio (しお), Kyalong (きゃろん), UltimateKissMa (キスマ), Nanase Noir (ナナセ・ノワール), Mafuyu (真冬), Rurune (ルルネ), Airi (愛莉), Shinano (しなの), Chocolat (ショコラ), Ririka (りりか)
+Maya (舞夜), Kikyo (桔梗), Selestia (セレスティア), Inaba (イナバ), Imeris (イメリス), Kokoa (ここあ), Rindo (竜胆), Tuberose (チューベローズ), Rushka (ルーシュカ), Yugi Miyo (ユギ ミヨ), Chise (チセ), Kuronatu (くろなつ), Moe (萌), Shinra (森羅), Uzuki (卯月), Lime (ライム), Velle (ヴェール), Manuka (マヌカ), Anon (あのん), Leefa (リーファ), Maid from the Satarina Tribe (サタリナ族のメイドさん), Hakua (珀杏), Mizuki (瑞希), Koyuki (狐雪), Sophina (ソフィナ), Yoru the Dragon (龍のヨルちゃん), Lasyusha (ラシューシャ), Xiaohua (シャオファ), Nagi (凪), Chiffon (シフォン), Liloumois (リルモワ), Lzebul (ルゼブル), Saria (サリア), InabaKaya (伊奈波かや), Morpho (モルフォ), Sio (しお), Kyalong (きゃろん), UltimateKissMa (キスマ), Nanase Noir (ナナセ・ノワール), Mafuyu (真冬), Rurune (ルルネ), Airi (愛莉), Shinano (しなの), Chocolat (ショコラ), Ririka (りりか), Milltina (ミルティナ)
 
 ### Caution
 
@@ -38,4 +37,3 @@ Maya (舞夜), Kikyo (桔梗), Selestia (セレスティア), Inaba (イナバ),
 - Depending on clothing, some clipping may occur due to product specifications.
 - Only Unity version 2022.3.22f1 is supported.
 - Please use it in compliance with public morals and standards.
-

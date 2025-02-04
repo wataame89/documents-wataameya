@@ -1,4 +1,3 @@
-
 # 응용편
 
 :::info 페이지 설명
@@ -22,7 +21,7 @@ PB 프리셋에 반영되지 않는, 흔들림에 관계가 큰 파라미터로�
   - 1로 설정하면 일반 PB와 유사하게 동작하고, 0에 가까울수록 가슴 본이 평행 이동을 많이 하게 되어 체감상 뒤로 물러나는 느낌이 들며 더 자연스러울 수 있습니다.
   - 기본값은 0.8로, 약간 평행 이동을 가미해 두었습니다.
 
-이 두 파라미터를 조정함으로써 흔들림 동작을 상세하게 다듬을 수 있습니다. 각 항목의 자세한 설명은 [설정 항목](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup)을 참고하세요.
+이 두 파라미터를 조정함으로써 흔들림 동작을 상세하게 다듬을 수 있습니다. 각 항목의 자세한 설명은 [설정 항목](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)을 참고하세요.
 
 ### 마시마로 PB의 위치・각도를 조정하기
 
@@ -78,11 +77,10 @@ marshmallow_PB_L의 로컬 좌표 및 스케일입니다. marshmallow_PB_R은 L 
 
 #### (Parameter)\_0, (Parameter)\_100
 
-각 파라미터의 가슴 셰이프키가 0일 때, 100일 때의 값입니다. 그 중간값은 보간됩니다. 각 파라미터는 [설정 항목](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup)에 나오는 PhysBone 파라미터에 대응됩니다.
+각 파라미터의 가슴 셰이프키가 0일 때, 100일 때의 값입니다. 그 중간값은 보간됩니다. 각 파라미터는 [설정 항목](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)에 나오는 PhysBone 파라미터에 대응됩니다.
 
 <!-- 직접 제작한 비대응 아바타용 프리셋을 공식으로 제공해 주실 경우에는 [이 Google Form](https://forms.gle/9qfEqBHDyiEisy4G9)을 통해 보내주시면 감사하겠습니다. -->
 
 <!-- ### 툴을 쓰지 않고 직접 도입(Prefab 등)
 툴을 사용하지 않고 마시마로 PB를 수동 도입하고 싶을 경우, (비권장) 아래 영상을 참고해 주세요.
 <iframe width="280" height="158" src="https://www.youtube.com/embed/pKpk3hQhihc?si=trFn__bA0hqWF_76" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> -->
-

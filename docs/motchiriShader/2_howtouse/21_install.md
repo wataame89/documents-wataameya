@@ -26,7 +26,7 @@
 11. Gesture Manager を起動し、for test を肌に近づけて正常にもっちりしていれば設定完了です。
 
 :::caution
-正常に動作しない場合は、[「不具合対応」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)を確認してみて下さい。  
+正常に動作しない場合は、[「不具合対応」](https://wataame89.github.io/documents-wataameya/motchiriShader/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/motchiriShader/qa)を確認してみて下さい。  
 :::
 
 <br/>
@@ -66,7 +66,8 @@ style={{ width: '50%' }}
 
 :::danger
 
-- Unity にマスクを導入後、必ず Mip Streaming の項目をオンにして下さい。(アップロード時にエラーが発生します)
+- Unity にマスクを導入後、必ずテクスチャの **Mip Streaming** の項目をオンにして下さい。(アップロード時にエラーが発生します)
+
   :::
 
 #### 作成例：

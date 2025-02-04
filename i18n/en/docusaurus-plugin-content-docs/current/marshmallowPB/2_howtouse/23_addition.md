@@ -1,4 +1,3 @@
-
 # Advanced Usage
 
 :::info Page Description
@@ -22,7 +21,7 @@ Aside from the PB Preset, two additional parameters significantly influence the 
   - If set to 1, it behaves like a standard PB. Lower values make the chest move more in parallel, effectively shifting its pivot backward, which can feel more natural.
   - The default is 0.8, which is slightly parallel.
 
-By tuning these parameters, you can fine-tune jiggle behavior. For details on each, see [Configuration Items](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup).
+By tuning these parameters, you can fine-tune jiggle behavior. For details on each, see [Configuration Items](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup).
 
 ### Adjusting Marshmallow PB’s Position and Angle
 
@@ -78,11 +77,10 @@ The local coordinates/scale of marshmallow_PB_L. The right side (marshmallow_PB_
 
 #### (Parameter)\_0, (Parameter)\_100
 
-Values for each parameter when the chest blendshape is 0 and when it is 100. Intermediate values are interpolated. Each parameter corresponds to a PhysBone parameter described in [Configuration Items](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup).
+Values for each parameter when the chest blendshape is 0 and when it is 100. Intermediate values are interpolated. Each parameter corresponds to a PhysBone parameter described in [Configuration Items](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup).
 
 <!-- If you want to officially share your preset for an unsupported avatar, please submit it via [this Google Form](https://forms.gle/9qfEqBHDyiEisy4G9). -->
 
 <!-- ### Installing Manually (e.g. Prefabs)
 If you want to install Marshmallow PB manually without using the tool, see this video (not recommended).
 <iframe width="280" height="158" src="https://www.youtube.com/embed/pKpk3hQhihc?si=trFn__bA0hqWF_76" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> -->
-

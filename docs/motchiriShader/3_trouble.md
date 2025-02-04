@@ -1,21 +1,25 @@
 # 困ったときは
 
 :::info ページの説明
-ましゅまろ PB が正常に動作していないと思われる場合に参照するページです。  
-(正常に動作している場合は、[「使い方/応用編」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)を参照)
+もっちりシェーダー が正常に動作していないと思われる場合に参照するページです。  
+(正常に動作している場合は、[「使い方/応用編」](https://wataame89.github.io/documents-wataameya/motchiriShader/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/motchiriShader/qa)を参照)
 :::
 
 ### シェーダーが機能していない
 
-- Gesture Manager 上でテストしてみて動けばシェーダーは正常です。動作しない場合は一度、新しいプロジェクトで Avatar3.0 対応アバターをセットアップしてみてください。
-- VRChat の設定の Avatar Intaract の Self Intaract(自分の PB が触れなくなる設定)がオンになっていると自分では触れません。
+- Gesture Manager 上でテストしてみて動けばシェーダーは正常です。  
+  動作しない場合は一度、新しいプロジェクトでアバターをセットアップしてみてください。
+- VRChat の設定の Avatar Intaract の Self Intaract(自分の PB が触れなくなる設定)がオフになっていると自分では触れません。(参考：[公式ドキュメント](https://docs.vrchat.com/docs/permissions-and-settings))
 - メッシュのマテリアル変更アニメーションが入っている場合も動作しません。
 - WriteDefault が FX レイヤー中で統一されていない場合は動作しないことがあるので、必ず統一してください。
 - マテリアルエラーとなる場合、motchiri_shader フォルダを右クリックから Reimport すると直る場合があります。
+- VRChat のアバタースケーリングを使用している場合、動作しません。デフォルトのサイズでご利用ください。
 
 ### 自分は触れるけどフレンドに触ってもらおうとしたら触れなかった
 
-仕様上、触れるのは一番近い他プレイヤー 1 人のみですので、同時に触ろうとしたり、周囲にプレイヤーが複数人いると上手く機能しないことがあります。また、Contact の設定によっては触れない場合もあります。判定方法として、PhysBone(耳や尻尾など)に触れるプレイヤーであればもっちりシェーダーも触れるはずです。PB が触れる状態で触れない場合はリセットアバターやアバター変更をすると触れることが多いです。PhysBone も触れない場合は VRChat の Avatar Intaract 内の設定を見直してください。
+仕様上、触れるのは一番近い他プレイヤー 1 人のみですので、同時に触ろうとしたり、周囲にプレイヤーが複数人いると上手く機能しないことがあります。また、Contact の設定によっては触れない場合もあります。
+
+判定方法として、PhysBone(耳や尻尾など)に触れるプレイヤーであればもっちりシェーダーも触れるはずです。PB が触れる状態で触れない場合はリセットアバターやアバター変更をすると触れることが多いです。PhysBone も触れない場合は VRChat の Avatar Intaract 内の設定を見直してください。(参考：[公式ドキュメント](https://docs.vrchat.com/docs/permissions-and-settings))
 
 ### 人差し指の判定がズレて触れないことがある
 
@@ -23,11 +27,12 @@ VRChat 側で設定された指のデフォルトコライダーはカプセル�
 
 ### タイツのメッシュが貫通する
 
-体のみハイポリになっているため、タイツとポリゴンがズレるために起こります。体のポリゴンと合わせるためにタイツのテッセレーションをオンにすれば直ります。
-<img
+体のみハイポリになっているため、タイツとポリゴンがズレるために起こります。~体のポリゴンと合わせるためにタイツのテッセレーションをオンにすれば直ります。~ 身体のメッシュを消すシェイプキーの値を僅かに設定することで、見た目を損なうことなく貫通を解消できます。
+
+<!-- <img
 src={require('/img/MotchiriShader/taitu.png').default}
 style={{ width: '800px' }}
-/>
+/> -->
 
 ### ほっぺが上手くもちもちできない
 
@@ -71,5 +76,5 @@ VRChat 側の不具合で、コンタクトのパラメータが初期化され�
 ---
 
 :::caution このページで不具合が解決しない場合
-[お問い合わせ](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtocontact)を参照してください。
+[お問い合わせ](https://wataame89.github.io/documents-wataameya/motchiriShader/howtocontact)を参照してください。
 :::

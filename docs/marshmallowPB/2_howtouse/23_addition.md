@@ -22,7 +22,7 @@ PB プリセットで設定されず、揺れ方に関係するパラメータ�
   - 実質的に、胸ボーンの中心が後ろに移動することとなり、より自然な揺れとなります。
   - デフォルトの値は 0.8 なので、少しだけ平行化されています。
 
-以上のパラメータを調整することで、揺れ方の詳細な調整が出来ます。各設定の詳細は[設定項目](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup)を確認してください。
+以上のパラメータを調整することで、揺れ方の詳細な調整が出来ます。各設定の詳細は[設定項目](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)を確認してください。
 
 ### ましゅまろ PB の位置、角度を調整する
 

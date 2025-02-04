@@ -1,4 +1,3 @@
-
 # 시작하며
 
 <img
@@ -30,7 +29,7 @@ Modular Avatar를 이용한 셋업 시스템을 통해, 간단하게 비파괴�
 
 ### 대응 아바타
 
-舞夜 Maya, 桔梗 Kikyo, セレスティア Selestia, イナバ Inaba, イメリス Imeris, ここあ Kokoa, 竜胆 Rindo, チューベローズ Tuberose, ルーシュカ Rushka, ユギ ミヨ Yugi Miyo, チセ Chise, くろなつ Kuronatu, 萌 Moe, 森羅 Shinra, 卯月 Uzuki, ライム Lime, ヴェール Velle, マヌカ Manuka, あのん Anon, リーファ Leefa, サタリナ族のメイドさん Satarina, 珀杏 Hakua, 瑞希 Mizuki, 狐雪 Koyuki, ソフィナ Sophina, 龍のヨルちゃん Yoru, ラシューシャ Lasyusha, シャオファ Xiaohua, 凪 Nagi, シフォン Chiffon, リルモワ Liloumois, ルゼブル Lzebul, サリア Saria, 伊奈波かや InabaKaya, モルフォ Morpho, しお Sio, きゃろん Kyalong, キスマ UltimateKissMa, ナナセ・ノワール Nanase Noir, 真冬 Mafuyu, ルルネ Rurune, 愛莉 Airi, しなの Shinano, ショコラ Chocolat, りりか Ririka
+舞夜 Maya, 桔梗 Kikyo, セレスティア Selestia, イナバ Inaba, イメリス Imeris, ここあ Kokoa, 竜胆 Rindo, チューベローズ Tuberose, ルーシュカ Rushka, ユギ ミヨ Yugi Miyo, チセ Chise, くろなつ Kuronatu, 萌 Moe, 森羅 Shinra, 卯月 Uzuki, ライム Lime, ヴェール Velle, マヌカ Manuka, あのん Anon, リーファ Leefa, サタリナ族のメイドさん Satarina, 珀杏 Hakua, 瑞希 Mizuki, 狐雪 Koyuki, ソフィナ Sophina, 龍のヨルちゃん Yoru, ラシューシャ Lasyusha, シャオファ Xiaohua, 凪 Nagi, シフォン Chiffon, リルモワ Liloumois, ルゼブル Lzebul, サリア Saria, 伊奈波かや InabaKaya, モルフォ Morpho, しお Sio, きゃろん Kyalong, キスマ UltimateKissMa, ナナセ・ノワール Nanase Noir, 真冬 Mafuyu, ルルネ Rurune, 愛莉 Airi, しなの Shinano, ショコラ Chocolat, りりか Ririka, ミルティナ Milltina
 
 ### 주의
 
@@ -38,4 +37,3 @@ Modular Avatar를 이용한 셋업 시스템을 통해, 간단하게 비파괴�
 - 상품의 사양상, 의상에 따라 관통(클리핑)이 발생할 수 있습니다.
 - Unity 버전은 2022.3.22f1만 지원합니다.
 - 공서양속을 지켜 이용해 주시기 바랍니다.
-

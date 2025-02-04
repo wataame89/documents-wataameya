@@ -1,4 +1,3 @@
-
 # 应用篇
 
 :::info 页面说明
@@ -22,7 +21,7 @@ PB 预设会设定 PhysBone 的 “Pull”、“Momentum”、“Stiffness”、
   - 设为 1 时与普通 PB 相同；数值越接近 0，胸部骨骼越倾向平行移动，从而在视觉上稍向后移动，可能显得更自然。
   - 默认值是 0.8，略带一些平行移动效果。
 
-通过调整这两个参数，可对晃动进行更细致的调控。具体请参考 [设定项目](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup)。
+通过调整这两个参数，可对晃动进行更细致的调控。具体请参考 [设定项目](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)。
 
 ### 调整 Marshmallow PB 的位置和角度
 
@@ -78,11 +77,10 @@ style={{ width: '80%' }}
 
 #### (Parameter)\_0, (Parameter)\_100
 
-胸部形状键为 0 和 100 时的各参数值。中间值会自动插值。各参数与 [设定项目](http://localhost:3000/documents-wataameya/marshmallowPB/howtouse/setup) 中 PhysBone 的参数相对应。
+胸部形状键为 0 和 100 时的各参数值。中间值会自动插值。各参数与 [设定项目](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup) 中 PhysBone 的参数相对应。
 
 <!-- 如果愿意将自制的不支持头像预设分享给官方，可通过[此 Google Form](https://forms.gle/9qfEqBHDyiEisy4G9)提交。 -->
 
 <!-- ### 手动导入（例如 Prefab）
 若想不使用工具而手动引入 Marshmallow PB（不推荐），可参考以下视频。
 <iframe width="280" height="158" src="https://www.youtube.com/embed/pKpk3hQhihc?si=trFn__bA0hqWF_76" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> -->
-

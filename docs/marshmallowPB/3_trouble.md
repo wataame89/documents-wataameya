@@ -13,12 +13,12 @@
   - 身体メッシュの胸の大きさのシェイプキーを服のシェイプキーに対して僅かに小さく設定します。
   - 多くの場合はこれで解決します。
 - **胸のつぶれ深さを浅くする。**
-  - PhysBone 設定の「[LimitColliderPosition](https://wataame89.github.io/documents-marshmallowPB/setup#limitcolliderposition)」の数値をを大きくする、もしくは「[MaxSquish](https://wataame89.github.io/documents-marshmallowPB/setup#maxsquish)」の数値を小さくすることで設定できます。
-  - 仰向けになったときのつぶれ具合は「[胸のつぶれやすさ(仰向け)](https://wataame89.github.io/documents-marshmallowPB/setup#%E8%83%B8%E3%81%AE%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%84%E3%81%99%E3%81%95%E4%BB%B0%E5%90%91%E3%81%91)」の数値を小さくすることで設定できます。
+  - PhysBone 設定の「[LimitColliderPosition](https://wataame89.github.io/documents-marshmallowPB/howtouse/setup#limitcolliderposition)」の数値をを大きくする、もしくは「[MaxSquish](https://wataame89.github.io/documents-marshmallowPB/howtouse/setup#maxsquish)」の数値を小さくすることで設定できます。
+  - 仰向けになったときのつぶれ具合は「[胸のつぶれやすさ(仰向け)](https://wataame89.github.io/documents-marshmallowPB/howtouse/setup#%E8%83%B8%E3%81%AE%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%84%E3%81%99%E3%81%95%E4%BB%B0%E5%90%91%E3%81%91)」の数値を小さくすることで設定できます。
 - **つぶれたときの変形を抑える。**
-  - 「[つぶれアニメーションの強さ](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%BC%B7%E3%81%95)」を小さくすることで設定できます。
+  - 「[つぶれアニメーションの強さ](https://wataame89.github.io/documents-marshmallowPB/howtouse/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%BC%B7%E3%81%95)」を小さくすることで設定できます。
 - **つぶれ機能をオフにする。**
-  - 「[つぶれ機能オフ(貫通対策)](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E6%A9%9F%E8%83%BD%E3%82%AA%E3%83%95%E8%B2%AB%E9%80%9A%E5%AF%BE%E7%AD%96)」をオンにすることで設定できます。
+  - 「[つぶれ機能オフ(貫通対策)](https://wataame89.github.io/documents-marshmallowPB/howtouse/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E6%A9%9F%E8%83%BD%E3%82%AA%E3%83%95%E8%B2%AB%E9%80%9A%E5%AF%BE%E7%AD%96)」をオンにすることで設定できます。
   - この方法はましゅまろ PB がつぶれなくなりますが、貫通はしなくなります。
 
 ### ましゅまろ PB が適用されない場合
@@ -54,7 +54,7 @@ PB を複数持つアバターの場合、通常の設定では PB を削除し�
 
 ### ましゅまろ PB の設定位置がおかしい場合(動くとメッシュが破綻する場合)
 
-ましゅまろ PB の位置が何らかの理由でズレている可能性が考えられます。非対応アバターと同様に設定するか、「[オフセットとしてこのオブジェクトの Transform を使用](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%82%AA%E3%83%95%E3%82%BB%E3%83%83%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E3%81%93%E3%81%AE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AEtransform%E3%82%92%E4%BD%BF%E7%94%A8)」
+ましゅまろ PB の位置が何らかの理由でズレている可能性が考えられます。非対応アバターと同様に設定するか、「[オフセットとしてこのオブジェクトの Transform を使用](https://wataame89.github.io/documents-marshmallowPB/howtouse/setup#%E3%82%AA%E3%83%95%E3%82%BB%E3%83%83%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E3%81%93%E3%81%AE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AEtransform%E3%82%92%E4%BD%BF%E7%94%A8)」
 をオンにしてオフセットを設定することで調整して下さい。
 
 ---

@@ -1,8 +1,8 @@
 # 応用編
 
 :::info ページの説明
-ましゅまろ PB のより高度な用法を知りたい場合に参照するページです。  
-(一般的な問題を解決したい場合は[「不具合対応」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)を参照)
+もっちりシェーダー のより高度な用法を知りたい場合に参照するページです。  
+(一般的な問題を解決したい場合は[「不具合対応」](https://wataame89.github.io/documents-wataameya/motchiriShader/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/motchiriShader/qa)を参照)
 :::
 
 ### EX コライダーの設定
@@ -13,7 +13,7 @@ motchiri_shader/EX/Motchiri_Stick(もっちり棒).prefab をアバターのボ�
 
 プレハブ内には EX_Sender_1\~3 のコライダーが存在し、見た目上は 3 つの小さな球が表示されますが、実際には EX1-EX2-EX3 という風に繋がってカプセル状に判定を持ちます。(デフォルトコライダーとは異なる特別な判定を持ちます)
 
-EX_Sender_1\~3 を移動させることで自由にコライダーの設定が出来ます。棒状コライダーにしたくない場合は、EX_Sender_1\~3 を重ねるように設定して下さい。
+EX_Sender_1\~3 を移動させることで自由にコライダーの設定が出来ます。球状コライダーにしたい場合は、EX_Sender_1\~3 を重ねるように設定して下さい。
 
 <img
 src={require('/img/MotchiriShader/excollider.png').default}
@@ -23,3 +23,8 @@ style={{ width: '400px' }}
 ### 他メッシュへの適用(顔、尻尾、服など)
 
 体などと同様にセットアップツールにメッシュを設定してください。そのまま適用するとメッシュ上であればどこでも変形するため、ポリゴンが急に変化している部分で破綻します。(尻尾など均一なメッシュであれば大丈夫です)そのため、マスクを作成し、もっちりする場所を指定する必要があります。高度な設定のマスク作成を参照し、ほっぺ以外や服の端などを黒く塗ったマスクを作成してください。なお、舞夜ちゃんなど一部のアバターはデフォルトでほっぺも設定されています。
+
+### 布を膨らませるシステム
+
+もっちりシェーダーを反転し、服に適用すると、[こちらのツイート](https://x.com/kuukuukon/status/1814951825608785997)のように設定することができます。  
+現状は簡単には設定できませんが、将来的に設定できるように調整する予定です。

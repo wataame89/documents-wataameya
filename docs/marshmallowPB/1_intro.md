@@ -8,7 +8,7 @@ style={{ width: '300px' }}
 ### 商品説明
 
 [ましゅまろ PB](https://wataame89.booth.pm/items/4511536)とはリッチな物理表現を可能とした、つぶれる PhysBone システムです。  
-伸び縮みや重力の影響を計算することで、通常の PB にはないリアルな挙動を実現します。
+伸び縮みや重力の影響を再現することで、通常の PB にはないリアルな挙動を実現します。
 
 Modular Avatar を用いたセットアップシステムにより、簡単に非破壊的な導入が可能です。  
 対応していないアバターでも、シーン上で位置調整することによりセットアップが可能です。
@@ -29,7 +29,7 @@ Modular Avatar を用いたセットアップシステムにより、簡単に�
 
 ### 対応アバター
 
-舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、 萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka、あのん Anon、リーファ Leefa、サタリナ族のメイドさん Satarina、珀杏 Hakua、瑞希 Mizuki、狐雪 Koyuki、ソフィナ Sophina、龍のヨルちゃん Yoru、ラシューシャ Lasyusha、シャオファ Xiaohua、凪 Nagi、シフォン Chiffon、リルモワ Liloumois、ルゼブル Lzebul、サリア Saria、伊奈波かや InabaKaya、モルフォ Morpho、しお Sio、きゃろん Kyalong、キスマ UltimateKissMa、ナナセ・ノワール Nanase Noir、真冬 Mafuyu、ルルネ Rurune、愛莉 Airi、しなの Shinano、ショコラ Chocolat、りりか Ririka
+舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、 萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka、あのん Anon、リーファ Leefa、サタリナ族のメイドさん Satarina、珀杏 Hakua、瑞希 Mizuki、狐雪 Koyuki、ソフィナ Sophina、龍のヨルちゃん Yoru、ラシューシャ Lasyusha、シャオファ Xiaohua、凪 Nagi、シフォン Chiffon、リルモワ Liloumois、ルゼブル Lzebul、サリア Saria、伊奈波かや InabaKaya、モルフォ Morpho、しお Sio、きゃろん Kyalong、キスマ UltimateKissMa、ナナセ・ノワール Nanase Noir、真冬 Mafuyu、ルルネ Rurune、愛莉 Airi、しなの Shinano、ショコラ Chocolat、りりか Ririka、ミルティナ Milltina
 
 ### 注意
 

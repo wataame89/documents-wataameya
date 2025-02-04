@@ -40,10 +40,10 @@ import { themes as prismThemes } from "prism-react-renderer";
       ({
         navbar: {
           title: "綿飴屋 Wataameya",
-          // logo: {
-          //   alt: "My Site Logo",
-          //   src: "img/wataameya.png",
-          // },
+          logo: {
+            alt: "My Site Logo",
+            src: "img/wataameya_logo_web.png",
+          },
           items: [
             {
               type: "doc",
