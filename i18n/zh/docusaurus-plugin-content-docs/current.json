@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.marshmallowPB.category.使い方": {
+    "message": "使用方法",
+    "description": "The label for category 使い方 in sidebar marshmallowPB"
+  },
+  "sidebar.motchiriShader.category.使い方": {
+    "message": "使用方法",
+    "description": "The label for category 使い方 in sidebar motchiriShader"
+  }
+}

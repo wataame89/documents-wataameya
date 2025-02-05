@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "綿飴屋 Wataameya",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.ましゅまろPB": {
+    "message": "MarshmallowPB",
+    "description": "Navbar item with label ましゅまろPB"
+  },
+  "item.label.もっちりシェーダー": {
+    "message": "MotchiriShader",
+    "description": "Navbar item with label もっちりシェーダー"
+  },
+  "item.label.ブラックアウトシェーダー": {
+    "message": "BlackoutShader",
+    "description": "Navbar item with label ブラックアウトシェーダー"
+  },
+  "item.label.ブラックボディシェーダー": {
+    "message": "BlackbodyShader",
+    "description": "Navbar item with label ブラックボディシェーダー"
+  },
+  "item.label.なでなでシェーダー": {
+    "message": "ShadowdepthShader",
+    "description": "Navbar item with label なでなでシェーダー"
+  },
+  "item.label.X(Twitter)": {
+    "message": "X(Twitter)",
+    "description": "Navbar item with label X(Twitter)"
+  },
+  "item.label.Booth": {
+    "message": "Booth",
+    "description": "Navbar item with label Booth"
+  }
+}

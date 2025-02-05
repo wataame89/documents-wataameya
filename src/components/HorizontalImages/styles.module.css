@@ -1,0 +1,12 @@
+.horizontalImagesContainer {
+  display: flex;             /* 子要素を横並びに */
+  justify-content: center;   /* 横方向の中央揃え（例：space-between や space-around も可） */
+  align-items: center;       /* 縦方向の中央揃え */
+  gap: 16px;                 /* 画像間の隙間 */
+}
+
+.imageStyle {
+  max-width: 100%;           /* 画像のサイズ調整 */
+  height: auto;
+  cursor: pointer;           /* マウスオーバーでポインター表示 */
+}
