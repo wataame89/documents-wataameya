@@ -1,4 +1,3 @@
-
 # Troubleshooting
 
 :::info Page Description
@@ -93,4 +92,3 @@ This is a bug on VRChat’s side, where contact parameters are initialized, caus
 :::caution If this page does not solve your issue
 Please refer to [Contact Us](https://wataame89.github.io/documents-wataameya/motchiriShader/howtocontact).
 :::
-

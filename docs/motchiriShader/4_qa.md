@@ -12,7 +12,7 @@
 ### Unity ゲームで使いたい
 
 URP 対応のシェーダーとして、別にもっちりシェーダーを開発しています。  
-将来的には公開する予定ですが、開発に使用したい場合はご相談下さい。
+[もっちりシェーダー URP](https://wataame89.booth.pm/items/7260413)をご参照下さい。
 
 使用例：[ミスター秘密侵入 VR](https://www.dlsite.com/maniax/work/=/product_id/RJ01266526.html/?utm_medium=affiliate&utm_campaign=sns_link&utm_content=RJ01266526&utm_source=mr-vr-jp.github.io%2F)
 

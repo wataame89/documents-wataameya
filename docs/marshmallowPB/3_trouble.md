@@ -74,7 +74,7 @@ PB を複数持つアバターの場合、通常の設定では PB を削除し�
 ### 「ルルネ」 ： AFK に入ると謎の物体が発生する
 
 ルルネの AFK は Armature を圧縮しているため、ましゅまろ PB の Constraint と干渉し、メッシュが残ってしまいます。  
-AFK アニメーションを地中に埋めることで対応できます。DM などでお問い合わせ頂ければ、アニメーションの修正パッチを送ります。
+AFK アニメーションを地中に埋めることで対応できます。アニメーションの修正パッチは[こちら](https://drive.google.com/file/d/1GFAQwwUsCjFp7VGXelsKM6SXsQ75dpNT/view?usp=sharing)をご参照下さい。
 
 ---
 
