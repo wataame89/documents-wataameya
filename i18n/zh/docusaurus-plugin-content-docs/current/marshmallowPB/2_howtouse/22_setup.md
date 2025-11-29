@@ -1,165 +1,372 @@
+# 设置面板
 
-# 设定项目
-
-### 设置工具中的设定项目
+---
 
 <img
-src={require('/img/marshmallowPB/setup.png').default}
+src={require('/img/marshmallowPB/setup/Intro.png').default}
 style={{ width: '80%' }}
 />
 
----
+#### Language
 
-### 基本设定
+选择在 Inspector 中使用的语言。支持英文、韩文与简体中文。
 
-#### 预设 (Preset)
+#### Reset Parameters
 
-在此处选择头像预设。
-
-#### 胸部骨骼
-
-选择您的头像的胸部骨骼。
-
-#### 胸部大小（blendshape）
-
-仅适用于支持的头像，对 **让胸部变大** 的形状键进行数值设置。  
-如果是让胸部变小的形状键，则不支持，请当作不支持的头像进行配置。
-
-#### 胸部骨骼 Y 缩放（Transform）
-
-在此处输入胸部骨骼的 **Y 缩放** 值。X、Z 缩放值无需输入。  
-即使胸部骨骼的 X、Y、Z 缩放值各不相同，也能正常工作。
-
-#### PB 预设
-
-选择 PhysBone 的预设。  
-晃动方式共有 “顺滑 (なめらか)”、“ぷるぷる (PuruPuru)”、“たゆんたゆん (TayunTayun)” 三种，每种又有三段硬度可调。
+重置当前正在编辑的所有参数。（头像预设与胸部骨骼的指定不会被重置。）
 
 ---
 
-### PhysBone
+### Basic Setting
 
-#### Pull
+<img
+src={require('/img/marshmallowPB/setup/BasicSetting.png').default}
+style={{ width: '80%' }}
+/>
 
-PhysBone 恢复原状的力量。
+#### Preset
 
-#### Momentum
+选择头像预设。  
+如果预设很多，找不到自己的预设，可以点击 ▼ 按钮展开列表。
 
-PhysBone 弹力（弹簧强度）的参数。
+#### Chest Bone
 
-#### Stiffness
+选择头像的胸部骨骼（通常为 Upper Chest）。
 
-PhysBone 不易弯曲（减少晃动）的参数。
+#### Chest Size（blendshape）
 
-#### Gravity
+对于已支持头像，设置**用于增大胸部的形状键**的数值。  
+如果预设中写明了某个形状键名称，请使用该名称的形状键。  
+对于未支持头像，如果也存在胸部大小的形状键，则可参照支持头像的方式进行设置。
 
-PhysBone 所受重力的强度。
+#### Chest Bone Y Scale（Transform）
 
-#### GravityFalloff
-
-相对于初始角度偏移时，受重力影响的程度。
-
-#### Immobile
-
-PhysBone 不易移动的程度。本参数不会影响被碰撞体按压时的行为。
-
-#### LimitAngle
-
-PhysBone 的限制旋转角度。
-
-#### CollisionRadius
-
-PhysBone 碰撞体半径。数值越大，碰触胸部的判定范围越大。
-
-#### LimitColliderPosition
-
-用于防止穿透的碰撞体位置参数。适度增大可作为防穿透对策。  
-（例如：从 0.135 改为 0.18）
-
-#### StretchMotion
-
-PhysBone 在挤压方向上的惯性参数。决定当头像前进时胸部因惯性而被挤压的幅度。
-
-#### MaxStretch
-
-PhysBone 能伸长的最大值。值越大能伸得越长。
-
-#### MaxSquish
-
-PhysBone 能被挤压的最大值。值越大挤压越深；反之则挤压较浅，较难穿透。
-
-#### Collider
-
-PhysBone 可交互的碰撞体。最多可设置 6 个。
+仅填写胸部骨骼的 **Y 缩放值**。（X/Z 不必填写）  
+即使骨骼的 X/Y/Z 缩放不相同也没有关系，系统只会使用 Y 值。
 
 ---
 
-### 详细设定
+### PhysBone Setting
 
-#### 抓取功能
+<img
+src={require('/img/marshmallowPB/setup/PhysBoneSetting.png').default}
+style={{ width: '80%' }}
+/>
 
-是否允许抓住 PhysBone。
+#### PB Preset
 
-#### 地面碰撞体
+选择 PB 预设。  
+默认提供 “Smooth（柔和）”、“Jiggly（Q 弹）”、“Heavier Jiggle（重量感）” 三种类型，每种又有三档硬度可选。  
+之后也可以添加自定义预设。
 
-PhysBone 是否与地面发生干涉。
+#### Pull（Restore Shape）
 
-#### 和其他玩家的胸部干涉
+控制 PB 恢复到原始形状的力度。
 
-是否开启与同样导入 Marshmallow PB 的其他玩家进行胸部干涉。还可与默认头部碰撞体进行干涉。
+#### Momentum（Spring Strength）
 
-#### 胸部晃动旋转
+控制 PB 的弹簧（弹性）强度。
 
-晃动时是否在椭圆上运动。如果关闭，则采用平行晃动。  
-由于向上方向的运动会受到限制，如果感觉不自然，可以关闭。
+#### Stiffness（Anti-Bend / Anti-Jitter）
 
-#### 双胸互相干涉
+控制 PB 不易弯曲、不易抖动的程度。
 
-是否为头像的左右胸部设置相互干涉的碰撞体。
+#### Gravity（Strength）
 
-#### 干涉用碰撞体大小
+控制 PB 受重力影响的强度。  
+若将其调得远大于默认值，胸部可能会出现严重塌陷等异常，请注意。
 
-设置左右胸部相互干涉时使用的碰撞体大小。
+#### GravityFalloff（Shape Retention）
 
-#### 胸部骨骼旋转贡献度
+控制 PB 在重力作用下保持原始形状的程度。  
+骨骼偏离初始角度越多，形状保持效果越弱，重力效果越强。
 
-PhysBone 旋转对胸部骨骼影响的大小。若设为 0，则胸部骨骼只会平行运动。衣服不同可能导致不同穿透效果；数值越靠近 0，穿透越少。（相当于胸部骨骼的 Rotation Constraint 的 Weight）
+#### Immobile（Motion Damping）
 
-#### 挤压动画强度
+控制 PB「不容易移动」的程度（阻尼大小）。  
+对手动用碰撞体按压时的反应没有影响。
 
-调整胸部挤压动画的强度。胸部较大时可能在水平方向上显得过于扩张，减小此值可令其更自然。（相当于胸部骨骼的 Scale Constraint 的 Weight）
+#### ImmobileType
 
-#### 胸部下垂程度
+决定 Immobile 作用于哪类运动：
 
-设置弯腰时胸部下垂的最大值。若为 0 则不会下垂。
+- **AllMotion**：作用于所有运动。
+- **World**：仅在头像相对世界移动（行走、跳跃等）时生效。
 
-#### 胸部挤压灵敏度（仰卧）
+在 **World** 模式下，普通的小幅动作会被视为 Immobile=0，因此大多数情况推荐使用 **AllMotion**。
 
-设置仰卧时胸部被挤压的最大值。若为 0 则不会挤压。
+#### LimitAngle（Angle Limit）
+
+设置 PB 可弯曲的最大角度。
+
+#### LimitRotation（Angle Offset）
+
+设置 PB 运动的角度偏移。  
+可以为 X/Y/Z 分别设置不同数值，左右会镜像对称应用。
+
+#### CollisionRadius（Collider Size）
+
+设置 PB 碰撞体的半径大小。  
+值越大，越容易触碰到胸部。
+
+#### AllowCollision（Touch Permission）
+
+设置「谁可以触碰 Marshmallow PB」。可选：仅自己／好友／所有人。
+
+#### StretchMotion（Squish / Elasticity）
+
+控制因头像移动导致的胸部拉伸与压缩（弹性）的强度。  
+值越大，前进／后退等移动时胸部变形越明显。
+
+#### MaxStretch（Max Extension）
+
+设置 PB 最大可拉伸长度。  
+值越大，被抓住往外拉时可以被拉得越长。设为 0 时，拉伸功能会被禁用。
+
+#### MaxSquish（Max Squish）
+
+设置 PB 最大可压缩（压扁）量。  
+值越大，被压得越深；值越小，压扁较浅，衣服穿模也越少。  
+设为 0 时，压扁功能会被禁用。
+
+#### AllowGrabbing（Grab Permission）
+
+设置「谁可以抓取 Marshmallow PB」。可选：仅自己／好友／所有人。
+
+#### AllowPosing（Pose Lock Permission）
+
+设置「谁可以对 Marshmallow PB 进行姿势锁定」。可选：仅自己／好友／所有人。
+
+#### GrabMovement（Follow Strength）
+
+控制被抓住时 PB 跟随手部移动的程度。  
+数值越大，胸部越紧贴手移动。
+
+#### SnapToHand（Snap Amount）
+
+控制抓取瞬间胸部向手的位置“吸附”得多紧。  
+如果设置得太大，动作可能显得生硬、突兀，建议适度调整。
+
+#### GrabCurve（Grab Distance Curve）
+
+定义抓取时，胸部位置相对于手部位置的变化曲线。  
+用于更精细地调整拖拽胸部时的手感。
 
 ---
 
-### 高级设定
+### Inertia Setting（惯性／伪多重骨骼）
 
-#### 仅应用挤压功能（使用原本 PB）
+<img
+src={require('/img/marshmallowPB/setup/InertiaSetting.png').default}
+style={{ width: '80%' }}
+/>
 
-保留头像自带的 PB，仅应用 Marshmallow PB 的挤压功能。也就是关闭 Marshmallow PB 的晃动功能后，让原本 PB 保留运动。若使用时想要 Marshmallow PB 的抓取功能，推荐关闭原本 PB 的 Allow Grabbing。
+Inertia 会模拟额外的“惯性骨骼”，为运动增加延迟与柔软度。
 
-#### 关闭挤压功能（穿透对策）
+#### Inertia Strength
 
-关闭 Marshmallow PB 的挤压功能，仅保留晃动功能。如果服装穿透严重，可启用此项。
+控制惯性骨骼的运动幅度。  
+值越大，胸部越柔软、拖尾感越明显。
 
-#### 关闭重力功能
+#### Inertia Follow
 
-停用 Marshmallow PB 在仰卧时挤压、弯腰时伸长的机制。注意此操作不会关闭 PB 本身的 Gravity 参数。
+控制惯性骨骼追随主 PB 运动的速度。  
+值越大，追随越快（延迟变小）；值越小，延迟感更明显。
 
-#### 移除本骨骼下所有 PB
+#### Inertia Immobile
 
-通常仅删除选定的胸部骨骼上的 PB，若不支持的头像结构复杂，可启用此选项，一并删除此骨骼下的所有 PB。
+控制惯性骨骼不易移动的程度。  
+作用类似 Immobile，但只作用于 Inertia。
 
-#### 使用此对象的 Transform 作为偏移
+#### Inertia Count
 
-使用 marshmallow_PB_Setup 的位置、旋转、缩放作为 Marshmallow PB 的偏移量。  
-若因穿高跟鞋等原因导致头像上移，则预设位置可能会错位；此时可启用该功能，将 marshmallow_PB_Setup 提升相同高度，就可避免错位。  
-当出现 Marshmallow PB 偏移的问题时，可用该功能进行调节。
+设置使用的惯性骨骼数量。  
+数量越多，效果越柔和、细腻，但性能开销也越大。
+
+---
+
+### Parallel Bone Setting
+
+<img
+src={require('/img/marshmallowPB/setup/ParallelBoneSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+Parallel Bone 主用于保持胸部骨骼的“平行姿势”，以表现重量感。
+
+#### Parallel Strength
+
+控制胸部骨骼保持平行姿态的力度。  
+值越大，越不容易倾斜，看起来越有重量、越稳。
+
+#### Parallel Degree
+
+控制运动有多“接近平行”。  
+接近 0 时，运动强烈趋向平行；接近 1 时，更接近普通 PB 的旋转行为。
+
+#### Parallel Immobile
+
+控制 Parallel Bone 运动不易移动的程度。  
+数值过大时，胸部可能显得过于僵硬。
+
+---
+
+### Gravity Setting
+
+<img
+src={require('/img/marshmallowPB/setup/GravitySetting.png').default}
+style={{ width: '80%' }}
+/>
+
+#### Chest Sag Ease
+
+控制前倾时胸部下垂的容易程度。  
+值越大，下垂越明显；设为 0 时，不发生下垂。
+
+#### Chest Squish Ease（On Back）
+
+控制仰卧时胸部被压扁的容易程度。  
+值越大，仰卧时胸部越容易塌开；设为 0 时，该效果被禁用。
+
+---
+
+### Interference / Squish Setting
+
+<img
+src={require('/img/marshmallowPB/setup/InterferenceSquishSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+#### Interference Between Left and Right Chest
+
+是否在头像左右胸部之间放置用于相互干涉的碰撞体。  
+启用后，当左右胸部互相靠近时会相互挤压。
+
+#### Interference Collider Size
+
+控制左右胸部干涉所用碰撞体的大小。
+
+#### Chest Interference with Other Players
+
+是否与其他玩家的 Marshmallow PB 发生胸部干涉。  
+根据设置，还可以与头部或身体碰撞体发生互相作用。  
+此选项也可在游戏中的 EX 菜单中切换。
+
+#### Floor Collider
+
+是否与地面碰撞体发生碰撞。  
+启用后，趴下等姿势下胸部会被地面压扁。
+
+---
+
+### Anti-Penetration Setting
+
+<img
+src={require('/img/marshmallowPB/setup/AntiPenetrationSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+#### LimitColliderPosition（Squish Limit Position）
+
+设置限制胸部压缩深度的碰撞体位置。  
+值越大，越难被压得很深。  
+该限制叠加在普通 PB 压缩与重力压缩之上，主要用于防止衣物穿模。
+
+#### Anti-Penetration System
+
+开启防穿透系统。  
+左右胸部骨骼会相互追随，从而减少只有一侧移动时导致的穿模。
+
+#### Disable Squish Function
+
+完全禁用 Marshmallow PB 的压扁（Squish）功能。  
+也可以从游戏内 EX 菜单中切换。  
+当你更看重防穿模而不是形变表现时，可启用此选项。
+
+#### Rotation When Both Chests Interfere
+
+开启“左右胸部同时干涉时的旋转”功能。  
+当左右胸部强烈接触时，骨骼会微微向外旋转，以减少穿模。
+
+---
+
+### Menu Setting
+
+<img
+src={require('/img/marshmallowPB/setup/MenuSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+#### Generate Menu for Marshmallow PB
+
+生成用于控制 Marshmallow PB 的 EX 菜单。  
+在该菜单中可以切换：
+
+- Chest Interference with Other Players
+- Anti-Penetration System
+- Disable Squish Function
+- 切换为普通 PB
+- 禁用 PB
+
+#### Menu Install Destination（可选）
+
+调整 EX 菜单在头像菜单树中的安装位置。  
+若不指定，则会添加在最上层。
+
+---
+
+### Advanced Setting
+
+<img
+src={require('/img/marshmallowPB/setup/AdvancedSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+#### Apply Preset Based on Chest Bone
+
+以胸部骨骼为基准应用预设。  
+因为使用的是“相对于胸部骨骼的位置”，所以即便在 Unity 中改变头像的体型或整体位置，仍能正确应用。  
+如果在 Blender 等工具中对骨骼结构进行了大幅修改，则建议将该头像视为未支持头像，使用手动设置流程。
+
+#### Use This Object’s Transform as Offset
+
+将 `marshmallow_PB_Setup` 对象的位置作为 Marshmallow PB 的位置／旋转／缩放偏移。  
+例如，如果头像因为穿高跟鞋等原因整体被抬高，默认预设可能会导致 Marshmallow PB 的位置偏移。  
+此时可以启用该选项，并将 `marshmallow_PB_Setup` 按相同幅度移动，以修正位置。  
+多数情况下仅使用「Apply Preset Based on Chest Bone」即可，若仍有偏移，可再配合本选项微调。
+
+#### Remove All PB Under This Bone
+
+删除指定胸部骨骼下的所有 PB 组件。  
+默认只删除胸部骨骼下方直接挂载的 PB，但对于结构复杂的未支持头像，可启用此选项以全部删除。
+
+#### Apply Only Squish Function（Use Original PB）
+
+保留头像原有 PB 的晃动行为，仅应用 Marshmallow PB 的压扁功能。  
+在这种模式下，Marshmallow PB 的晃动功能被禁用，原始 PB 的运动得以保留。  
+使用此设置时，建议将原始 PB 的 **Allow Grabbing** 设为 OFF。
+
+---
+
+### PB Preset Setting
+
+<img
+src={require('/img/marshmallowPB/setup/PBPresetSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+#### Import
+
+读取 PB 代码字符串并将其应用到当前 PB 设置中。  
+该代码会记录影响晃动的 PhysBone／Inertia／Parallel Bone 参数（不包含角度限制、权限等项目）。
+
+#### Export
+
+将当前 PB 设置导出为 PB 代码字符串。  
+可以将此代码分享给他人，以便轻松复用 Marshmallow PB 的参数设置（例如通过 SNS）。
+
+#### Save
+
+将当前 PB 设置保存为 PB 预设。  
+保存后，预设会出现在 PB Preset 列表中，供以后再次使用。
 

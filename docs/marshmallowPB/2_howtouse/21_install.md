@@ -1,5 +1,9 @@
 # 導入方法
 
+:::caution
+※ver1.7.0 での説明動画ですが、ver2.0 以降もセットアップ方法は同様です。
+:::
+
 ### 対応アバターの場合
 
 <iframe width="100%" height="480" src="https://www.youtube.com/embed/17p4SnL1kus?si=og9SA6Ef8Rwkg3_-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -11,9 +15,9 @@
 3. VCC 上でプロジェクトの Manage Project から"**Gesture Manager**","**Modular Avatar**","**Non-Destructive Modular Framework**" の 3 点を追加します。
 4. 再度プロジェクトを開き、インポートされていることを確認します。
 
-:::caution
+<!-- :::caution
 **ver1.7.0 以前のましゅまろ PB が入っている場合**は「marshmallow_PB/Setup/FX」内の生成済み FX を移動し、marshmallow_PB フォルダを削除します。(削除しない場合、エラーが発生します)
-:::
+::: -->
 
 #### ましゅまろ PB の導入
 
@@ -24,6 +28,7 @@
 9. Gesture Manager を起動し、ましゅまろ PB が正常に動いていれば設定完了です。
 
 :::caution
+アバターに**ver2.0.0 以前のましゅまろ PB が入っている場合**は初めにパラメータの初期化を行ってください。(行わない場合、動作しません)  
 正常に動作しない場合は、[「不具合対応」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)を確認してみて下さい。  
 :::
 

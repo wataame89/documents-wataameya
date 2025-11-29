@@ -1,6 +1,6 @@
 # お問い合わせ
 
-お問い合わせ内容が[「使い方/応用編」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「不具合対応」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)にない場合は、[Booth](https://wataame89.booth.pm)、[X(Twitter)](https://twitter.com/wataameya_vr)にて作者までご連絡ください。(画像送信が容易なため、X(Twitter)がおすすめです)
+お問い合わせ内容が[「使い方/応用編」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「不具合対応」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)にない場合は、[Booth](https://wataame89.booth.pm)、[X(Twitter)](https://twitter.com/wataameya_vr)にて作者までご連絡ください。
 
 不具合報告の場合は、以下のフォーマットに従って送信頂けるとスムーズです。
 

@@ -1,43 +1,54 @@
-
 # If You Run into Trouble
 
 :::info Page Description
 Refer to this page if you suspect Marshmallow PB is not working correctly.  
-(If it is working correctly, see [“How to Use/Advanced”](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition) or [“Q&A”](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa))
+(If it is working correctly, see [“How to Use/Advanced”](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition) or [“Q&A”](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa).)
 :::
 
 ### If Clothing Clips Through
 
-Due to the nature of Marshmallow PB, clothing may inevitably clip in some situations. Here are some possible countermeasures:
+Due to the nature of Marshmallow PB, some outfits will inevitably clip. Try the following countermeasures:
 
+- **Limit Marshmallow PB’s functionality in VRChat.**
+  - From the EX menu, you can turn off squish, switch to normal PB, or turn Marshmallow PB off entirely.
+  - You have to select it each time, but clipping caused by Marshmallow PB disappears.
 - **Slightly reduce the chest shape key on the body mesh.**
-  - Slightly adjust the body mesh’s chest size shape key relative to the clothing’s shape key so that the body mesh’s chest is a bit smaller.
-  - In most cases, this solves the problem.
+  - Make the body mesh’s chest-size shape key slightly smaller than the clothing’s chest-size shape key (for example, body 90, clothing 100).
+  - This is effective for many outfits.
+- **Reduce the effects of Inertia and Parallel Bone.**
+  - Lower Inertia’s Immobile value toward 1 and Parallel Bone’s parallel degree toward 0 to weaken their influence.
+  - This is effective when clipping occurs during vertical motion.
+- **Limit the chest bone’s angle.**
+  - In the PhysBone Settings, reduce the value of “[LimitAngle (Angle Limit)](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup).”
+  - This is effective when clipping occurs during large swings.
 - **Make the chest squish shallower.**
-  - Increase the value of “[LimitColliderPosition](https://wataame89.github.io/documents-marshmallowPB/setup#limitcolliderposition)” in the PhysBone settings or decrease “[MaxSquish](https://wataame89.github.io/documents-marshmallowPB/setup#maxsquish).”
-  - For how much it squishes when lying on your back, you can decrease the value of “[Chest Squish Ease (On Back)](https://wataame89.github.io/documents-marshmallowPB/setup#%E8%83%B8%E3%81%AE%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%84%E3%81%99%E3%81%95%EF%BC%88%E4%BB%B0%E5%90%91%E3%81%91%EF%BC%89).”
-- **Reduce the deformation when squished.**
-  - Lower the value of “[Squish Animation Strength](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%BC%B7%E3%81%95)” to moderate the deformation.
+  - In Anti-Penetration Settings, increase “[LimitColliderPosition](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup).”
+  - In PhysBone Settings, lower “[MaxSquish](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)” to reduce squish in the normal pose.
+  - In Gravity Settings, lower “[Chest Squish Ease (On Back)](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)” to reduce squish when lying on your back.
+  - “LimitColliderPosition” takes priority over the other two, so in most cases changing only this parameter is enough.
+  - This is effective when clipping occurs only while the chest is squished.
 - **Turn off the squish function.**
-  - Enable “[Turn Off Squish Function (Clipping Countermeasure)](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E6%A9%9F%E8%83%BD%E3%82%AA%E3%83%95%E8%B2%AB%E9%80%9A%E5%AF%BE%E7%AD%96).”
-  - This will stop Marshmallow PB from squishing, but it also stops clipping.
+  - Enable “[Turn Off Squish Function (Clipping Countermeasure)](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup).”
+  - You can also toggle it from the EX menu in VRChat.
+  - This is effective when clipping occurs only while squished and you don’t mind losing deformation.
 
 ### If Marshmallow PB Is Not Being Applied
 
-If marshmallow_PB_setup still remains even when you use Gesture Manager or enter Play mode, Marshmallow PB might not have been applied correctly.
+If `marshmallow_PB_setup` still remains even after entering Play mode via Gesture Manager, Marshmallow PB has not been applied correctly.
 
-#### If a message is displayed in the window:
+#### If a message is displayed in the window
 
-Please check the installation method again and follow the instructions in the message.
+Check the installation steps again and fix the setup according to the message.
 
-#### If errors appear in the Console:
+#### If errors appear in the NDMF Console
 
-Some issue has caused the process to stop. Please send the detailed error code to us via [Booth](https://wataame89.booth.pm) or [Twitter](https://twitter.com/wataameya_vr).  
-**However**, errors that appear when you exit Play mode are not related to Marshmallow PB. Please send us the errors that appear when you **enter** Play mode.
+Some kind of issue has interrupted processing. Please copy the error code and send it via [Booth](https://wataame89.booth.pm) or [Twitter](https://twitter.com/wataameya_vr).  
+However, errors that occur **when leaving** Play mode are unrelated to Marshmallow PB. Please send only the errors that occur **when entering** Play mode.
 
-#### If no errors appear in the Console:
+#### If no errors appear in the NDMF Console
 
-Check if Tools → NDM Framework → Apply on Play is checked. If not, please check it. If it is checked and still not working, check for errors again and contact us if necessary.
+Check that “Tools → NDM Framework → Apply on Play” is enabled.  
+If it is enabled but Marshmallow PB still doesn’t work, check again for errors and contact us if necessary.
 
 <!-- ### If There Is Excessive Shaking
 When Marshmallow PB is pressed, there can be some jitter. Basically, increasing the Stiffness (resistance to deformation) will reduce this jitter.
@@ -47,35 +58,63 @@ Most of the time, it’s because of an incorrect setup configuration. Please ref
 
 ### If the Chest Squishes on Its Own
 
-When “Chest Interference with Other Players” is on, a bug may cause it to squish by itself. In most cases, turning off “Chest Interference with Other Players” solves the issue.
+If “Chest Interference with Other Players” is on, a bug may cause the chest to squish by itself even when not touched.  
+In most cases, turning off “Chest Interference with Other Players” resolves the issue.
+
+### If the Squish Animation Does Not Play
+
+If another FX layer is assigned to the avatar, the squish animation may stop working.  
+Assign an empty controller to the FX layer to restore the animation.
 
 ### If the Marshmallow PB Jiggle Feels Wrong
 
-For avatars that have multiple PBs, the default settings may fail to remove all PB components, causing odd behavior (for example, on Velle). In such a case, enabling “Remove All PB Under This Bone” should fix the issue.
+For avatars that have multiple PB components, the default settings may fail to delete all PBs, causing odd movement (for example, on Velle). In such a case, enabling “Remove All PB Under This Bone” should fix the issue.  
+For unsupported avatars, existing PhysBone or Constraint components that manipulate the same bones can interfere, so delete as many as possible before installing Marshmallow PB.  
+Also check for components placed directly under the avatar root, not just under the chest bone.
 
 ### If the Positioning of Marshmallow PB Is Wrong (Mesh Breaks When Moving)
 
-Marshmallow PB may be misaligned for some reason. Please set it up as for an unsupported avatar, or turn on “[Use This Object’s Transform as Offset](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%82%AA%E3%83%95%E3%82%BB%E3%83%83%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E3%81%93%E3%81%AE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AEtransform%E3%82%92%E4%BD%BF%E7%94%A8)”  
-and adjust the offset accordingly.
+If the Marshmallow PB object has shifted for some reason, the mesh may break when moving.  
+Either set it up the same way as for an unsupported avatar, or enable “[Use This Object’s Transform as Offset](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)” and adjust the offset.
+
+### If the Avatar’s Chest Mesh Twists or Breaks
+
+If an avatar animation directly controls the chest bone, the chest mesh may twist or break (for example, on Lasyusha or Nepherisa).  
+If replacing the FX layer with an empty controller fixes the problem, search for animations that manipulate the chest bone and delete or adjust them.
+
+### If Only the Outfit’s Chest Twists or Breaks
+
+If you are using VRCFury’s Armature Link, sometimes only the outfit mesh will twist.  
+In that case, please use Modular Avatar’s outfit system instead.
 
 ---
 
 ### Avatar-Specific Issues
 
-#### “Shinano” : Odd Chest Jiggle / Lopsided Left and Right
+#### “Shinano” – Chest Jiggle Feels Wrong / Left and Right Are Different
 
-For unknown reasons, a chest PB that should be removed ends up remaining, causing this.  
-If you delete the chest PB in advance, it should resolve the issue.
+For unknown reasons, a chest PB that should be removed ends up remaining.  
+Deleting the chest PB in advance should resolve the issue.
 
-#### “Kuronatu” : Marshmallow PB Does Not Work
+#### “Kuronatu” – Marshmallow PB Does Not Work
 
-If the chest size is normal for Kuronatu, the FX layer animation prevents the PB from moving.  
-Deleting the “Breast_DB” in Kuronatu’s FX layer should make it work.
+For Kuronatu with the default chest size, the FX layer animation prevents the PB from moving.  
+Deleting “Breast_DB” in Kuronatu’s FX layer should make it work.
 
-#### “Rurune” : A Strange Object Appears When AFK
+#### “Rurune” – Strange Object Appears When AFK
 
-Rurune’s AFK compresses the Armature, which conflicts with the Marshmallow PB Constraint, leaving a stray mesh behind.  
-You can handle this by burying the AFK animation underground. If you contact us by DM, we can provide a patch that fixes the animation.
+Rurune’s AFK animation compresses the Armature, which conflicts with the Marshmallow PB constraints and leaves a stray mesh behind.  
+You can handle this by moving the AFK animation underground. An animation fix patch is available [here](https://drive.google.com/file/d/1GFAQwwUsCjFp7VGXelsKM6SXsQ75dpNT/view?usp=sharing).
+
+#### “Lasyusha” – Chest Twists
+
+On Lasyusha, the FX layer animation manipulates the chest bone’s position, which can conflict with Marshmallow PB and cause twisting.  
+In this case, set the “BreastPB Control” layer’s weight to 0 or delete the layer if unnecessary.
+
+#### “Nepherisa” – Chest Twists
+
+On Nepherisa, the FX layer animation manipulates the chest bone’s position, which can conflict with Marshmallow PB and cause twisting.  
+In this case, set the “Bust Size” layer’s weight to 0 or delete the layer if unnecessary.
 
 ---
 
@@ -83,13 +122,9 @@ You can handle this by burying the AFK animation underground. If you contact us 
 
 #### Collider Detection Not Disappearing When Marshmallow PB Is Grabbed
 
-When you grab Marshmallow PB, the collider might remain active.  
-If you pull it far enough away from the collider, the detection eventually vanishes. Though unconfirmed, it’s likely a VRChat bug.
-
-#### Breast Size Fluctuates Slightly with Distance from Other Players
-
-When multiple contacts (such as “Mocchiri” shaders) are involved, the chest size may oscillate slightly.  
-This seems to be a VRChat bug caused by contact parameters being reset.
+When you grab Marshmallow PB, the collider’s detection may sometimes remain on.  
+If you pull it away from the collider (for example by stretching it), the detection eventually disappears. Although unconfirmed, this is likely a VRChat-side issue.  
+As of ver2.0, this function is disabled by default.
 
 ---
 

@@ -1,4 +1,3 @@
-
 # Introduction
 
 <img
@@ -42,4 +41,3 @@ Amanatsu, Anon, Carukia, Ciel, Haoran, Imeris, Karin, Kikyo, Kokoa, Koyuki, Leef
 - Only Unity version 2022.3.22f1 is supported.
 - It is not supported on mac environments due to errors.
 - Please use it in compliance with public morals and decency.
-

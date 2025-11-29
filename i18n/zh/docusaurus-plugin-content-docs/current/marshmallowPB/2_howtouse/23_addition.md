@@ -1,86 +1,136 @@
-# 应用篇
+# 进阶用法
 
 :::info 页面说明
-当 Marshmallow PB 运作正常，但想了解更高级的用法时可参阅此页面。  
-（若想解决常见问题，请查看 [“当遇到问题时”](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)、[“Q&A”](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)）
+当 Marshmallow PB 正常工作时，如果你想进一步细致地控制其行为，请参考本页面。  
+（一般性问题请参阅[「出现问题时」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/addition)或[「Q&A」](https://wataame89.github.io/documents-wataameya/marshmallowPB/qa)。）
 :::
-
-### 利用头像原本的 PhysBone
-
-若想保留头像原本 PB 的晃动，仅使用 Marshmallow PB 的挤压功能，请开启 “仅应用挤压功能（使用原本 PB）”。在这种状态下，原 PB 的运动将保持原样，但按压时会发生挤压。如果还想启用 Marshmallow PB 的抓取功能，需将原 PB 的 Allow Grabbing 关闭。
 
 ### 调整 Marshmallow PB 的晃动
 
-Marshmallow PB 的晃动由多个参数共同决定。  
-PB 预设会设定 PhysBone 的 “Pull”、“Momentum”、“Stiffness”、“Gravity”、“GravityFalloff”、“Immobile”。
+Marshmallow PB 的晃动主要由以下三类参数决定：
 
-除此之外，还有两个对晃动影响较大的参数：“StretchMotion” 和 “胸部骨骼旋转贡献度”。
+- **PhysBone**
+- **Inertia（惯性／伪多重骨骼）**
+- **Parallel Bone（平行骨骼）**
 
-- **“StretchMotion”**：与胸部挤压方向相关的惯性参数，决定 **移动时的软硬度**。
-- **“胸部骨骼旋转贡献度”**：与胸部骨骼角度、重量感相关的参数。
-  - 设为 1 时与普通 PB 相同；数值越接近 0，胸部骨骼越倾向平行移动，从而在视觉上稍向后移动，可能显得更自然。
-  - 默认值是 0.8，略带一些平行移动效果。
+**PhysBone** 控制骨骼的基本运动，是决定 **胸部如何晃动** 的主要参数。  
+**Inertia** 控制惯性效果，是决定 **胸部柔软度与拖尾感** 的关键。  
+**Parallel Bone** 控制胸部骨骼保持角度的能力，从而决定 **胸部的重量感**。
 
-通过调整这两个参数，可对晃动进行更细致的调控。具体请参考 [设定项目](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)。
+Marshmallow PB 在普通 PhysBone 的基础上加入 Inertia 与 Parallel Bone，从而实现更加自然的“棉花糖式”胸部晃动。
 
-### 调整 Marshmallow PB 的位置和角度
+<div
+  style={{
+    display: 'flex',
+    gap: '20px',
+    alignItems: 'center'
+  }}
+>
 
-若通过预设配置了受支持的头像，则 Marshmallow PB 的骨骼位置和角度是固定的；若为不支持的头像，则会使用您手动设定的值。若您增加了胸部大小等，可再次进行位置或角度调整。
+  <div>
+    <p><strong>左：无 Inertia / Parallel Bone</strong></p>
+    <img
+      src={require('/img/marshmallowPB/PhysBone_NoInertiaNoParallel.gif').default}
+      style={{ width: '100%' }}
+    />
+  </div>
 
-### 与其他玩家的 Marshmallow PB 进行干涉
+  <div>
+    <p><strong>右：有 Inertia / Parallel Bone</strong></p>
+    <img
+      src={require('/img/marshmallowPB/Physbone.gif').default}
+      style={{ width: '100%' }}
+    />
+  </div>
+</div>
 
-在 Marshmallow PB 的设定中开启 “和其他玩家的胸部干涉” 后，双方都开了该选项的玩家间才会发生胸部相互干涉。默认是关闭状态。
+通过调节这些参数，可以对晃动进行非常精细的调教。  
+各参数的详细说明请参阅[「设置面板」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)。
 
-### 与头部碰撞体进行干涉
+若想微调 PhysBone 与 Inertia，可以在生成设置后，直接编辑头像下新建的  
+`marshmallow_PB/PhysBone_L,R` 与 `marshmallow_PB/Inertia_L,R` 组件中的参数，进入 Play 模式后效果会立即反映。  
+Parallel Bone 相关参数则请在系统设置面板中进行调整。
 
-~~当开启 “和其他玩家的胸部干涉” 时，即使对方没有 Marshmallow PB，也可与默认的头部碰撞体产生干涉。不过默认的头部碰撞体较小，可在 Avatar Descriptor 的 Coliders 里调大碰撞体大小，以便更容易干涉。~~  
-Marshmallow PB 在启用 “和其他玩家的胸部干涉” 时，会与具有 head_tag 的 VRC Contact Sender 进行干涉。若在头部等处设置了 VRC Contact Sender，则可以与对方的 Marshmallow PB 进行碰撞。
+<img
+src={require('/img/marshmallowPB/PhysboneSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+### 保存与分享 Marshmallow PB 的晃动设置
+
+可以将 Marshmallow PB 的 PB 预设进行保存与分享。
+
+- **代码形式**  
+  将当前预设导出为 PB 代码字符串，便于通过 SNS 等方式分享，并在不同项目中快速复用。
+- **文件形式**  
+  将预设保存为文件。保存后的预设会显示在 PB Preset 列表中，可随时再次调用。
+
+<img
+src={require('/img/marshmallowPB/PBPresetSetting.png').default}
+style={{ width: '80%' }}
+/>
+
+### 为 Marshmallow PB 添加额外的碰撞体
+
+如果你添加了新的碰撞体，并将其注册到 PhysBone 设置中的 Collider 列表，Marshmallow PB 就会与其发生交互。  
+推荐在上臂、大腿等部位添加碰撞体，使这些部位在动作中能自然地压到胸部。
+
+### 调整 Marshmallow PB 的位置、角度与大小
+
+对已支持头像应用预设时，Marshmallow PB 的骨骼位置、角度与大小会被固定。  
+如果之后更改了胸部尺寸等，希望再次调整位置，可以将该头像视为“未支持头像”，按照未支持头像的安装流程进行设置，从而自由调整 Marshmallow PB 的骨骼位置与缩放。
+
+### 与其他玩家的 Marshmallow PB 产生交互
+
+在 Marshmallow PB 设置中启用 **Chest Interference with Other Players** 后，双方玩家的胸部在靠近时会互相挤压。  
+此功能需要双方都启用该选项，才能正确互相作用。  
+在 VRChat 中也可以通过 EX 菜单切换该项。
+
+### 与其他玩家的默认碰撞体产生交互
+
+当 **Chest Interference with Other Players** 为 ON 时，Marshmallow PB 也可以在一定条件下与其他玩家的默认碰撞体（头部／身体等）发生交互。  
+由于默认头部碰撞体通常较小，若希望交互更容易触发，可以在 Avatar Descriptor 的 Colliders 设置中适当增大头部碰撞体的尺寸。
 
 <img
 src={require('/img/marshmallowPB/head.png').default}
 style={{ width: '100%' }}
 />
 
-### 调整挤压动画
+### 仅使用头像原有的 PhysBone 晃动
 
-Marshmallow PB 通过动画拉伸胸部骨骼，营造蓬松感。如果想修改挤压动画，可编辑 “marshmallow_PB/Animation/MPB_L_Scale_squish” 和 “MPB_R_Scale_squish” 两个动画的 Scale x, y 参数。
+如果你希望保留头像原有 PB 的晃动，只使用 Marshmallow PB 的压扁功能，可以在设置面板中启用  
+**Apply Only Squish Function（Use Original PB）** 选项。  
+在这种模式下，晃动依然由原有 PB 提供，而按压时会叠加 Marshmallow PB 的压扁效果。  
+若还希望同时使用 Marshmallow PB 的抓取功能，建议将原有 PB 上的 **Allow Grabbing** 设为 OFF。
 
-### 添加自制的头像预设
+<!--
+### 添加自制头像预设
 
-Marshmallow PB 提供了记录各头像配置的预设功能。  
-若需要为多个相同类型的不支持头像进行重复设置，可考虑添加自制的头像预设，使用起来会很方便。
+Marshmallow PB 提供了头像预设功能，可将某个头像的配置记录为预设。  
+如果你需要反复为同一型号的未支持头像安装 Marshmallow PB，自制预设会非常方便。
 
-#### 添加自制头像预设的方法
+#### 添加头像预设的方法
 
-1. 准备两个头像：胸部形状键分别为 0 和 100 的版本。按不支持的头像方式分别配置，并记录下 marshmallow_PB_L 的 position、rotation、scale。
-2. 在 Preset 文件夹内复制 “Preset0”，改个合适的名字。（仅使用数字名可能会出错）
-3. 编辑该文件中的 avatarName、Path、breast_L_position、breast_L_rotation、breast_L_scale 等信息。  
-   （“\_0” “\_100” 分别对应胸部形状键为 0 和 100 的数值）  
-   其他参数保持默认一般也不影响使用。
-4. 在设置工具中确认该预设已出现即完成。
+1. 准备两个头像：一个胸部 blendshape 值为 0，一个为 100，并按未支持头像流程分别完成设置，记录此时 `marshmallow_PB_L` 的 position／rotation／scale。
+2. 在 Preset 文件夹中复制 `Preset0` 文件，并重命名。（请避免使用仅一位数的文件名，以免产生错误。）
+3. 编辑新文件中的 `avatarName`、`Path`、`breast_L_position`、`breast_L_rotation`、`breast_L_scale`。  
+   其中 `_0` 字段对应 blendshape 为 0 的头像，`_100` 对应 blendshape 为 100 的头像。  
+   其他参数一般可保持默认值。
+4. 打开设置工具，确认预设列表中已出现新的预设，即表示添加成功。
 
-#### 头像预设的设定项目
+#### 头像预设的配置项
 
 <img
 src={require('/img/marshmallowPB/preset.png').default}
 style={{ width: '80%' }}
 />
-头像的预设配置位于 “marshmallow_PB/Setup/Preset” 文件夹下。
 
-#### Path
+头像预设配置位于 `marshmallow_PB/Setup/Preset` 文件夹中。
 
-从头像到胸部骨骼或碰撞体的相对路径。
+- **Path**：从头像根节点到胸部骨骼与碰撞体的相对路径。
+- **breast_L_position / breast_L_scale**：`marshmallow_PB_L` 的本地位置与缩放。  
+  右侧 `marshmallow_PB_R` 会自动使用左右反转的数值。
+- **(Parameter)_0 / (Parameter)_100**：胸部 blendshape 为 0 与 100 时的参数值，中间值会自动进行插值。  
+  各参数与[「设置面板」](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup)中对应的 PhysBone 项目相对应。
+-->
 
-#### breast_L_position, breast_L_scale
-
-分别为 marshmallow_PB_L 的局部坐标和缩放。marshmallow_PB_R 会自动根据 L 的坐标镜像生成。
-
-#### (Parameter)\_0, (Parameter)\_100
-
-胸部形状键为 0 和 100 时的各参数值。中间值会自动插值。各参数与 [设定项目](https://wataame89.github.io/documents-wataameya/marshmallowPB/howtouse/setup) 中 PhysBone 的参数相对应。
-
-<!-- 如果愿意将自制的不支持头像预设分享给官方，可通过[此 Google Form](https://forms.gle/9qfEqBHDyiEisy4G9)提交。 -->
-
-<!-- ### 手动导入（例如 Prefab）
-若想不使用工具而手动引入 Marshmallow PB（不推荐），可参考以下视频。
-<iframe width="280" height="158" src="https://www.youtube.com/embed/pKpk3hQhihc?si=trFn__bA0hqWF_76" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> -->

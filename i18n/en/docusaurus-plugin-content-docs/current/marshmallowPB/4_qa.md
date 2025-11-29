@@ -15,6 +15,11 @@ Due to how Marshmallow PB works, it’s not possible to change its size in VRCha
 Because only one Marshmallow PB can be introduced, you cannot use it on both the chest and butt at the same time.  
 However, you might be able to if you bake it into the avatar using Modular Avatar’s Manual Bake Avatar. Note that this is not officially supported.
 
+### Want to Squish It with Both Players’ Arms
+
+On some avatars, colliders derived from the avatar’s own upper arms may already be set by presets.  
+If you want to configure this yourself, add PB colliders to both upper arms and register those colliders in Marshmallow PB’s PhysBone Collider list.
+
 ### Chest Stretches Too Much
 
 #### If it stretches too much when bending forward:
